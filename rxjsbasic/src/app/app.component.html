@@ -1,0 +1,46 @@
+<div class="container">
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <table>
+        <tr>
+            <td>Row1</td>
+            <td>Row2</td>
+            <td>Row3</td>
+        </tr>
+        <tr>
+            <th>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button (click)="button1()">Button1 from Row1</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button (click)="button2()">Button2 from Row1</button>
+                    </div>
+                </div>
+            </th>
+            <th>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button (click)="button3()">Button1 from Row2</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button (click)="button4()">Button2 from Row2</button>
+                    </div>
+                </div>
+            </th>
+            <th>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button (click)="button5()">Button1 from Row3</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button (click)="button6()">Button2 from Row3</button>
+                    </div>
+                </div>
+            </th>
+        </tr>
+    </table>
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+</div>
